@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Play the opening mission of Star City: Mars Mines, a retro text adventure from CK My Apps.">
+<meta name="theme-color" content="#130e0c">
+<title>Star City: Mars Mines · Web Demo</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header><span class="brand">CK MY APPS</span><span>STAR CITY / WEB DEMO</span></header>
+<main>
+<section id="cover" aria-labelledby="title">
+  <img class="cover" src="art/cover.webp" alt="Star City: Mars Mines. An illuminated mining colony in a Martian canyon." fetchpriority="high">
+  <div class="intro">
+    <div><span class="section-label">Star City • Valles Marineris, Mars • 2187</span><h1 id="title">Your first shift on Mars</h1><p>A dust storm has cut off contact with the mine. The colony is on emergency oxygen. Take command at the terminal.</p></div>
+    <div class="intro-actions">
+      <button id="start" class="primary">Start demo <span aria-hidden="true">→</span></button>
+      <a class="purchase" href="https://ckmyapps.itch.io/">Buy the full game <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</section>
+<section id="game" hidden aria-labelledby="room-title">
+  <div class="station"><div><span class="section-label">CHAPTER 1 / CONTROL ROOM</span><h1 id="room-title" tabindex="-1"></h1></div><button id="restart" class="quiet">Restart</button></div>
+  <div class="layout">
+    <div class="console">
+      <div id="log" class="log" role="log" aria-label="Mission transcript" tabindex="0"></div>
+      <form id="command-form"><span aria-hidden="true">&gt;</span><label class="sr-only" for="command">Enter a command</label><input id="command" placeholder="Type a command" autocomplete="off" autocapitalize="off" spellcheck="false"><button type="submit">Send</button></form>
+      <div id="quick" class="quick" aria-label="Quick commands"></div>
+    </div>
+    <aside><img id="scene" src="art/control.webp" alt=""><p id="goal">Restore the habitat panel, collect the scanner and wrench, then reach the service airlock.</p></aside>
+  </div>
+  <section id="ending" class="ending" hidden aria-labelledby="ending-title">
+    <h2 id="ending-title" tabindex="-1">Demo complete</h2>
+    <p>You’ve reached the service airlock. The rest of the mission awaits in the full macOS game.</p>
+    <a class="primary" href="https://ckmyapps.itch.io/">Buy the full game on itch.io <span aria-hidden="true">↗</span></a>
+  </section>
+</section>
+</main>
+<footer><span>STAR CITY: MARS MINES</span><span>Created by Christos A. Kazantzoglou</span></footer>
+</body>
+</html>

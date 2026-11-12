@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "Star City: Mars Mines — Web Demo",
+  "short_name": "Star City",
+  "description": "Play the opening mission of Star City: Mars Mines.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#130e0c",
+  "theme_color": "#130e0c",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
